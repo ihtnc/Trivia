@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "name": "Build and Run (server)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-server",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Trivia.Server/bin/Debug/net8.0/Trivia.Server.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Trivia.Server",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "name": "Build and Run (client)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-client",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Trivia.Client/bin/Debug/net8.0/Trivia.Client.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Trivia.Client",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md
+            "name": "Run (client)",
+            "type": "coreclr",
+            "request": "launch",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Trivia.Client/bin/Debug/net8.0/Trivia.Client.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Trivia.Client",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "externalTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Attach to Process",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
